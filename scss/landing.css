@@ -1,0 +1,285 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2, h1 {
+  font-weight: 300;
+  font-size: 3.75rem;
+  color: #393939;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 2.0625rem;
+  margin: 0.5rem;
+}
+
+.image {
+  height: 28.125rem;
+  float: right;
+  margin-right: 12.5rem;
+}
+
+.landing {
+  display: inline-block;
+  padding: 6.25rem 0;
+  margin-left: 6.25rem;
+}
+
+.background--pink {
+  background-color: #fff0ed;
+}
+
+h1.background--pink {
+  margin: 0;
+  padding-bottom: 1.25rem;
+}
+
+p.background--pink {
+  max-width: 40ex;
+  margin: 0;
+  padding-bottom: 2.5rem;
+}
+
+.background--grey {
+  background-color: #f7f7f7;
+  padding-bottom: 2.5rem;
+}
+
+button {
+  color: #fff;
+  background-color: #5bacc3;
+  border: none;
+  width: 11.25rem;
+  margin: auto;
+  padding: 1.25rem;
+  font-size: 1.3125rem;
+  display: block;
+}
+
+.button__border {
+  border: 2px solid #393939;
+  width: 11.5rem;
+  height: 64px;
+  position: absolute;
+}
+
+.button__border--offset {
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+.button__border--offset:active::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+
+#shopNow {
+  margin: 0;
+}
+
+#viewAll {
+  margin: 2% auto;
+  border: #393939 2px solid;
+}
+
+.banner__discount {
+  background-color: #393939;
+  color: #fff;
+  width: 90%;
+  font-size: 2.8125rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 15% auto;
+  padding: 0.3125rem 0.125rem;
+  animation-name: color-change;
+  animation-duration: 2.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.banner__discount--bold {
+  font-weight: bold;
+}
+
+.navbar__title {
+  text-decoration: none;
+}
+
+.price {
+  color: #5bacc3;
+  font-size: 2.0625rem;
+}
+
+.icons {
+  width: 3.125rem;
+}
+
+.navbar {
+  display: flex;
+  padding-left: 1.25rem;
+}
+
+.top-navbar {
+  font-size: 1.3125rem;
+  font-weight: 300;
+  display: inline-block;
+  padding: 1.25rem;
+  margin: 2.8125rem;
+}
+
+.top-navbar__a {
+  text-decoration: none;
+  padding: 0;
+}
+
+#link {
+  color: #393939;
+}
+
+#link--blue {
+  color: #5bacc3;
+}
+
+.landing__button--link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card {
+  width: 20.625rem;
+  height: 27.5rem;
+  background-color: #fff;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.3125rem 0.5625rem -0.0625rem;
+  color: rgb(0, 0, 0);
+  margin: 2.5rem;
+  display: inline-block;
+}
+
+h3.card {
+  padding-top: 2.5rem;
+}
+
+.card__img {
+  height: 17.5rem;
+  padding-top: 1.25rem;
+}
+
+.card__description {
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  padding: 1.5625rem 0;
+}
+
+.card__description--name {
+  text-align: left;
+  margin: 0;
+}
+
+p.card__description--name {
+  color: #909090;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+h2.products {
+  padding: 3.75rem;
+}
+
+.discount, .card__description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.discount__descr {
+  max-width: 50ex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.discount--icon {
+  margin: 0 7.5rem;
+}
+
+.discount__btn {
+  margin: 1.25rem 0;
+  border: #393939 2px solid;
+}
+
+.discount__img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.discount__img--foreground {
+  position: absolute;
+}
+
+.discount__img--foreground:hover {
+  animation: rotation 2s infinite linear;
+}
+
+.discount__img--background {
+  width: 25rem;
+}
+
+.footer-section {
+  display: inline-block;
+  padding: 1.25rem;
+  margin: 2.5rem;
+  width: 18.75rem;
+  height: 12.5rem;
+  text-align: left;
+}
+
+#footer {
+  margin: auto;
+  text-align: center;
+}
+
+@keyframes color-change {
+  from {
+    background-color: #393939;
+  }
+  to {
+    background-color: #5bacc3;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}/*# sourceMappingURL=landing.css.map */

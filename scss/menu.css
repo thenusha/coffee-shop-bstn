@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+}
+
+.header-left {
+  display: flex;
+  padding-left: 1.25rem;
+}
+
+h2, h1 {
+  font-weight: 300;
+  font-size: 3.75rem;
+  color: #393939;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 2.0625rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu {
+  width: 18.75rem;
+  height: 12.5rem;
+  background-color: #393939;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  align-content: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.menu--offset {
+  border: 5px solid #5bacc3;
+  position: relative;
+  width: 18.75rem;
+  display: inline-block;
+  height: 12.5rem;
+}
+
+.background-circle {
+  background-image: url(../Assets/coffee-circle.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 43.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #393939;
+  text-align: center;
+}
+
+.navbar__ul {
+  margin: 0;
+}
+
+.navbar__li {
+  display: inline-block;
+  margin: 1.25rem 0;
+  padding: 0.3125rem 0.625rem;
+  border-left: 0.25rem solid #5bacc3;
+  /*margin-right: 2rem;*/
+}
+
+.navbar__a {
+  color: #fff;
+  padding: 0;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#link {
+  color: #393939;
+}
+
+.pink-menu {
+  background-color: #fff0ed;
+  padding: 2.5rem;
+}
+
+.grey-menu {
+  background-color: #f7f7f7;
+  padding: 2.5rem;
+}
+
+.price {
+  color: #5bacc3;
+  text-align: center;
+  margin: 0;
+  padding: 16px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.p-italicize {
+  font-style: italic;
+  text-align: center;
+  max-width: 55ex;
+  margin: auto;
+}
+
+header {
+  background-color: #fff0ed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-navbar {
+  font-size: 1.3125rem;
+  font-weight: 300;
+  display: inline-block;
+  padding: 1.25rem;
+}
+
+.top-navbar__a {
+  text-decoration: none;
+  padding: 0;
+}/*# sourceMappingURL=menu.css.map */
